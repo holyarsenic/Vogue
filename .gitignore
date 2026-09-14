@@ -92,3 +92,6 @@ storage/
 *.pem
 *.key
 *.crt
+
+#agents
+.agents
