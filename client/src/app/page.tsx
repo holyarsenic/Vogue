@@ -1,8 +1,31 @@
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import LogoStrip from "@/components/LogoStrip";
+import Features from "@/components/Features";
+import HowItWorks from "@/components/HowItWorks";
+import Pricing from "@/components/Pricing";
+import Security from "@/components/Security";
+import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
+import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
+
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <LogoStrip />
+        <Features />
+        <HowItWorks />
+        <Pricing />
+        <Security />
+        <Testimonials />
+        <FAQ />
+        <FinalCTA />
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
